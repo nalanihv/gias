@@ -9,23 +9,32 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/tvParaIngresar"
-        android:inputType="number"
-        android:text="Ingrese algo"
+        android:id="@+id/etParaIngresar"
+        android:inputType="numberDecimal"
+        android:hint="Ingrese algo"
         />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/btMostrar"
+        android:id="@+id/btBorrar"
+        android:layout_below="@+id/etParaIngresar"
+        android:layout_alignParentRight="true"
+        android:text="Borrar"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btIngresar"
         android:text="Guardar"
-        android:layout_below="@+id/tvParaIngresar"
+        android:layout_below="@+id/etParaIngresar"
         />
     <ListView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:id="@+id/lvMostrar"
-        android:layout_below="@+id/btMostrar"
+        android:layout_below="@+id/btIngresar"
         />
 
 </RelativeLayout>
